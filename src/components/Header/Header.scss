@@ -1,0 +1,88 @@
+.header {
+  padding: 20px 0 ;
+  width: 100vw;
+  background: #2A2A2A;
+
+  &__logo {
+    cursor: pointer;
+    transition: 0.3s linear all;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__search {
+    width: 475px;
+    & > * {
+      width: 100%;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+  }
+
+  &__contact-phone {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Trebuchet MS Bold', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s linear all;
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &__icon {
+      margin-right: 10px;
+    }
+  }
+
+  &__cabinet-and-cart-wrapper {
+    display: flex;
+    align-items: center;
+
+    &__profile {
+      cursor: pointer;
+      margin-right: 10px; 
+      transition: 0.3s linear all;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__cart-wrapper {
+      position: relative;
+      transition: 0.3s linear all;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &__cart {
+        cursor: pointer;
+      }
+
+      &__cart__items-amount {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        background: #F9A43F;
+        border-radius: 50%;
+        height: 16px;
+        width: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+}

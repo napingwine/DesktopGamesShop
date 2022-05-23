@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trebuchet MS'), url('./../assets/fonts/threbuchet/trebuc.woff') format('woff');
+}
+  
+
+@font-face {
+  font-family: 'Trebuchet MS Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trebuchet MS Italic'), url('./../assets/fonts/threbuchet/Trebuchet-MS-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Trebuchet MS Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Trebuchet MS Bold'), url('./../assets/fonts/threbuchet/TREBUCBD.ttf') format('ttf');
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #E5E5E5;
+}
+
+.app {
+  display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  margin: 0 auto;
+}
+
+.main-content {
+  flex-grow: 1;
+}

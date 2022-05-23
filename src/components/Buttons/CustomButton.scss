@@ -1,0 +1,35 @@
+.customButton {
+  border: none;
+  border-radius: 9px;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Trebuchet MS Bold', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  width: 100%;
+  margin-bottom: 10px;
+
+  &_Shop{
+    background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+    color: #FFF;
+    &:hover {
+      background: linear-gradient(-184.53deg, #F9A43F 5.27%, #FB791B 91.78%,);
+    }
+  }
+
+  &_ByInOneClick {
+    border: 2px solid #F9A43F;
+    background: transparent;
+    color: #F9A43F;
+  }
+  
+  &:hover{
+    transform: scale(1.05);
+  }
+}
