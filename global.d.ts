@@ -3,4 +3,5 @@ declare module "*.scss" {
   export = content;
 }
 declare module "*.png" 
+declare module "*.bmp" 
 declare module "*.css"

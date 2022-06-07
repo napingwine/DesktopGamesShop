@@ -1,6 +1,6 @@
 export default interface IGameShoppingCard{
-  price: string,
-  name: string,
+  price: number,
+  title: string,
   audience: string,
   estimatedGameTime: string,
   age: string,

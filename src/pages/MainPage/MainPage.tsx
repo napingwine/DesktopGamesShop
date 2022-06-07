@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
+import BannerWithSlider from '../../components/BannerWithSlider/BannerWithSlider';
+import Contacts from './Contacts';
+import MainPageAboutSection from './MainPageAboutSection';
+import SpecialProposition from './SpecialProposition';
 
-const MainPage = () => {
+const MainPage: FC = () => {
   return (
     <div>
-      Main Page
+      <BannerWithSlider/>
+      <SpecialProposition/>
+      <MainPageAboutSection/>
+      <Contacts />
     </div>
   );
 };

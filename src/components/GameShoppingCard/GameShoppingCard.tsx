@@ -1,12 +1,13 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import './GameShoppingCard.scss';
-import CustomButtonShop from '../buttons/CustomButtonShop';
-import CustomButtonByIOneClick from '../buttons/CustomButtonByIOneClick';
+import CustomButtonShop from '../../components/Buttons/CustomButton'
+import CustomButtonByIOneClick from '../../components/Buttons/CustomButtonByIOneClick';
 import IGameShoppingCard from '../../models/IGameShoppingCard';
 import audienceIMG from '../../assets/Icons/audience.png';
 import clockIMG from '../../assets/Icons/Clock.png';
 
-const GameShoppingCard: FC<IGameShoppingCard> = ({addToCart, price, name, audience, estimatedGameTime, age, photoURL, byInOneClick}) => {
+const GameShoppingCard: FC<IGameShoppingCard> = ({addToCart, price, title, audience, estimatedGameTime, age, photoURL, byInOneClick}) => {
+  
   return (
     <div className='GameShoppingCard'>
       <div className="GameShoppingCard__imageWrapper">
@@ -17,7 +18,7 @@ const GameShoppingCard: FC<IGameShoppingCard> = ({addToCart, price, name, audien
         <div className="GameShoppingCard__infoGroup__estimatedGameTime"><img src={clockIMG}/>{estimatedGameTime}</div>
         <div className="GameShoppingCard__infoGroup__age">{age}</div>
       </div>
-      <p className="GameShoppingCard__name" title={name}>{name}</p>
+      <p className="GameShoppingCard__name" title={title}>{title}</p>
       <div className="GameShoppingCard__price">{price}</div>
       <div className="GameShoppingCard__buttonSection">
       <CustomButtonShop buttonText={'В корзину'} listener={addToCart} />

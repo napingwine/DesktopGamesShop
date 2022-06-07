@@ -28,7 +28,7 @@
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #E5E5E5;
+  background: rgba(255, 251, 248, 1);
 }
 
 .app {
@@ -40,4 +40,11 @@ body {
 
 .main-content {
   flex-grow: 1;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }

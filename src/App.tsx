@@ -13,20 +13,26 @@ import Catalogue from './pages/Catalogue/Catalogue';
 const App = () => {
   return (
     <div className='app'>
-      <Header />
-      <Navbar />
-      <div className="main-content">
-        <Routes>
-          <Route path='/' element={<MainPage/>}/>
-          <Route path='/about-us' element={<AboutUs/>}/>
-          <Route path='/events' element={<Events/>}/>
-          <Route path='/contacts' element={<Contacts/>}/>
-          <Route path='/catalogue' element={<Catalogue/>}/>
-        </Routes>
-      </div>
-      <Footer/>
+      {/* <Header />
+      <Navbar /> */}
+      <main className="main-content">
+        <RoutesSection />
+      </main>
+      <Footer />
     </div>
   );
 };
 
 export default App;
+
+const RoutesSection = () => {
+  return (
+    <Routes>
+      <Route path='/' element={<MainPage />} />
+      <Route path='/about-us' element={<AboutUs />} />
+      <Route path='/events' element={<Events />} />
+      <Route path='/contacts' element={<Contacts />} />
+      <Route path='/catalogue' element={<Catalogue />} />
+    </Routes>
+  )
+}

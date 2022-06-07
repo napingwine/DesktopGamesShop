@@ -13,12 +13,16 @@
     { "id": 12, "title": "json-server", "body": "typicode" },
     { "id": 13, "title": "json-server", "body": "typicode" }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "article": [
-    { "id": 1, "title": "json-server", "body": "typicode" }
-  ],
-  "profile": { "name": "typicode" }
-
+  "goods": [
+   { "id":1, "title": "Broken Realms: Horrek's Dreadlance", "price": 3214, "audience": "2-4", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/1.png"},
+   { "id":2, "title": "Marse: tra-tata-t-a-t", "price": 3214, "audience": "1-4", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/2.png"},
+   { "id":3, "title": "Broken Realms: Horrek's Dreadlance", "price": 314, "audience": "2-4", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/3.png"},
+   { "id":4, "title": "Some more games: version huersion", "price": 3264, "audience": "2-5", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/4.png"},
+   { "id":5, "title": "Magic: The fathering hujatering", "price": 378914, "audience": "2-4", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/1.png"},
+   { "id":6, "title": "Broken Realms: Horrek's Dreadlance", "price": 327, "audience": "1-4", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/2.png"},
+   { "id":7, "title": "Broken Realms: very new game", "price": 35214, "audience": "2-4", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/3.png"},
+   { "id":8, "title": "Broken Realms: Horrek's Dreadlance", "price": 35674, "audience": "2-2", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/4.png"},
+   { "id":9, "title": "Broken Realms: Bla-bla-lba", "price": 3567, "audience": "2-4", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/1.png"},
+   { "id":10, "title": "Broken Realms: Horrek's Dreadlance", "price": 4564, "audience": "1-4", "estimatedGameTime":"30-60", "age": "12-18", "photoURL": "http://localhost:5000/2.png"}
+  ]
 }
