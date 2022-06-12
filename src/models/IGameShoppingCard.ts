@@ -6,5 +6,7 @@ export default interface IGameShoppingCard{
   age: string,
   photoURL: string,
   addToCart: ()=> void,
-  byInOneClick: ()=> void
+  byInOneClick: ()=> void,
+  sale? : number,
+  hurryToBy?: boolean
 }

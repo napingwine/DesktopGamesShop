@@ -1,0 +1,90 @@
+.event-item {
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  border-radius: 9px;
+  height: 394px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 6px 16px rgba(42, 42, 42, 0.16));
+  
+  & > img.proportion-width {
+    width: 100%;
+  }
+  
+  & > img.proportion-height {
+    height: 100%;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: #F9A43F;
+  }
+  
+  &__info {
+    width: inherit;
+    padding: 20px 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color: #2a2a2a, $alpha: 0.74);
+    display: grid;
+    border-radius: 0 0 9px 9px;
+    grid-template-areas: 
+    'title        date-and-time  price'
+    'description  description    button'
+    ;
+    grid-gap: 10px;
+
+    grid-template-columns: 3fr 3fr 1fr;
+
+    &__title {
+      grid-area: title;
+    }
+    
+    &__date-and-time {
+      grid-area: date-and-time;
+      display: flex;
+      &__date {
+        padding-right: 5px;
+      }
+    }
+    
+    &__price {
+      grid-area: price;
+    }
+    
+    &__description {
+      grid-area: description;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      max-width: 85%;
+    }
+    &__button-wrapper {
+      grid-area: button;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__button {
+        display: block;
+        background: none;
+        border: 1px solid #FFFFFF;
+        border-radius: 14px;
+        padding: 5px 15px;
+        transition: all 0.3s linear;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

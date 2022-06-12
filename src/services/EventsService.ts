@@ -1,18 +1,18 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
-import { IGood } from '../models/IGood';
+import IEventItem from '../models/IEventItem';
 import { IQueryParams } from '../models/IQueryParams';
 import { baseURL } from './_ServiceVariables'
 
-export const goodsAPI = createApi({
-  reducerPath: 'goodsAPI',
+export const eventsAPI = createApi({
+  reducerPath: 'eventsAPI',
   baseQuery: fetchBaseQuery({ baseUrl: baseURL }),
   endpoints: (build) => ({
-    fetchGoods: build.query<{ apiResponse: IGood[], totalCount: number }, IQueryParams>({
+    fetchEvents: build.query<{ apiResponse: IEventItem[], totalCount: number }, IQueryParams>({
       query: ( queryParams ) => ({
-        url: 'goods',
+        url: 'events',
         params: { ...queryParams }
       }),
-      transformResponse(apiResponse: IGood[], meta) {
+      transformResponse(apiResponse: IEventItem[], meta) {
         return { apiResponse, totalCount: Number(meta?.response?.headers.get('X-Total-Count')) }
       }
     }),

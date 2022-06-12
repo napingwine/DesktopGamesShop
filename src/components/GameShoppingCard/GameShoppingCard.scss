@@ -1,5 +1,4 @@
 .GameShoppingCard {
-
   width:255px;
   display: flex;
   flex-direction: column;
@@ -11,11 +10,31 @@
   padding: 10px 0 20px;
   justify-content: space-between;
 
-  &__imageWrapper img {
-    max-width: 100%;
-    height: 170px;
-  }
+  &__imageWrapper {
+    position: relative;
+    img {
+      max-width: 100%;
+      height: 170px;
+    }
+    &__sale {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      
 
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #F9A43F;
+      border-radius: 14px;
+      padding: 5px 15px;
+    }
+  }
+  
+  
   &__infoGroup {
     width: 100%;
     display: flex;
@@ -51,5 +70,22 @@
     font-family: 'Trebuchet MS Bold', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 21px;
     padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    &__without-sale {
+      &.old-price{
+        position: relative;
+        &:before {
+          content: "";
+          border-bottom: 3px solid rgb(0, 0, 0);
+          position: absolute;
+          width: 100%;
+          height: 50%;
+          transform: rotate(12deg);
+        }
+      }
+    }
   }
 }

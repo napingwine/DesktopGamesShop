@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { IUser } from './../../models/IUser';
+
 interface userState {
   users: IUser[];
   isLoading: boolean;

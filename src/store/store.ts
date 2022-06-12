@@ -1,13 +1,16 @@
+import { bannerDataAPI } from './../services/BannerService';
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
-import { postAPI } from "../services/PostService";
-import { goodsAPI } from "../services/SpecialPropositionService";
 import userReducer from "./reducer/UserSlice";
+
+import { goodsAPI } from "../services/SpecialPropositionService";
+import { eventsAPI } from '../services/EventsService';
 
 const rootReducer = combineReducers({
   userReducer,
-  [postAPI.reducerPath]: postAPI.reducer,
-  [goodsAPI.reducerPath]: goodsAPI.reducer
+  [goodsAPI.reducerPath]: goodsAPI.reducer,
+  [bannerDataAPI.reducerPath]: bannerDataAPI.reducer,
+  [eventsAPI.reducerPath]: eventsAPI.reducer
 })
 
 export const setupStore = () => {
@@ -15,8 +18,9 @@ export const setupStore = () => {
     reducer: rootReducer,
     middleware: (getDefaultMiddleware)=>
     getDefaultMiddleware()
-    .concat(postAPI.middleware)
     .concat(goodsAPI.middleware)
+    .concat(bannerDataAPI.middleware)
+    .concat(eventsAPI.middleware)
   })
 }
 

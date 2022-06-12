@@ -3,7 +3,9 @@ import CustomButton from '../Buttons/CustomButton';
 import './BannerSlide.scss';
 import { IBannerSlide } from '../../models/IBannerSlide'
 
-const BannerSlide: FC<IBannerSlide> = ({ title, subTitle, imgURL, listener }) => {
+const BannerSlide: FC<IBannerSlide> = ({ title, subTitle, imgURL}) => {
+  const listener = () => {console.log("banner slide button listener")}
+  
   return (
     <div className='banner-slide'>
       <img src={imgURL} alt="123" />

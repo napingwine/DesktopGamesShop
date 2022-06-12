@@ -1,9 +1,21 @@
 .banner-slide {
+  max-width: 100vw;
+  overflow: hidden;
   img {
     max-height: 220px;
     @media(min-width: 767px){
       max-height: 320px;
     }  
+  }
+
+  &__title,
+  &__sub-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-right: 10px;
   }
 
   & .wrapper {
@@ -12,13 +24,15 @@
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;    
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 15px;
     
     @media(min-width: 767px){
+      justify-content: space-between;
       align-items: flex-end;
       flex-direction: row;
       padding: 30px;

@@ -1,47 +1,11 @@
-import React from 'react';
-import bannerBackground from '../../BDAssets/SliderBanner/bannerslide.png';
-import bannerBackground2 from '../../BDAssets/SliderBanner/bannerslide2.png';
-import bannerBackground3 from '../../BDAssets/SliderBanner/bannerslide3.png';
+import React, { useEffect, useState } from 'react';
 import './BannerWithSlider.scss'
 import BannerSlider from './BannerSlider';
 
-
-const slidesData = [
-  {
-    id:1,
-    title: 'Magic: the Gathering',
-    subTitle: 'Самая популярная карточная игра',
-    imgURL: bannerBackground,
-  },
-  {
-    id:2,
-    title: '2Magic: the Gathering',
-    subTitle: 'Самая популярная карточная игра',
-    imgURL: bannerBackground2,
-  },
-  {
-    id:3,
-    title: '3Magic: the Gathering',
-    subTitle: 'Самая популярная карточная игра',
-    imgURL: bannerBackground3,
-  },
-  {
-    id:4,
-    title: '4Magic: the Gathering',
-    subTitle: 'Самая популярная карточная игра',
-    imgURL: bannerBackground,
-  },
-  {
-    id:5,
-    title: '5Magic: the Gathering',
-    subTitle: 'Самая популярная карточная игра',
-    imgURL: bannerBackground2,
-  },
-]
-
-
+import { bannerDataAPI } from '../../services/BannerService'
 
 const BannerWithSlider = () => {
+  const { error, isLoading, data: slidesData } = bannerDataAPI.useFetchBannerDataQuery({});
 
   const slideButtonListener = () => {
     console.log('slideButtonListener')
@@ -49,7 +13,9 @@ const BannerWithSlider = () => {
 
   return (
     <div className='banner-with-slider__wrapper'>
-      <BannerSlider slidesData={slidesData} buttonListener={slideButtonListener}/>
+      {isLoading && <h1>... IS LOADING</h1>}
+      {error && <h1> Error... </h1>}
+      {slidesData && <BannerSlider slidesData={slidesData} buttonListener={slideButtonListener} />}
     </div>
   );
 };

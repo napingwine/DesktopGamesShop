@@ -14,6 +14,7 @@ const BannerSlider = ({ slidesData, buttonListener }) => {
     <div>
       <Swiper
         modules={[Navigation, Pagination, A11y]}
+        initialSlide = {1}
         slidesPerView= {'auto'}
         spaceBetween={5}
         loop={true}
@@ -28,12 +29,7 @@ const BannerSlider = ({ slidesData, buttonListener }) => {
       >
         {slidesData.map(slideData =>
           <SwiperSlide key={slideData.id}>
-            <BannerSlide
-              title={slideData.title}
-              subTitle={slideData.subTitle}
-              imgURL={slideData.imgURL}
-              listener={buttonListener}
-            />
+            <BannerSlide {...slideData}/>
           </SwiperSlide>
         )}
       </Swiper>
