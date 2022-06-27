@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import GameShoppingCard from '../GameShoppingCard/GameShoppingCard';
+import GameShoppingCard from '../GameShoppingCard';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import swipeListener from '../../helpers/swipeListener';
 import { IQueryParams } from '../../models/IQueryParams';
@@ -47,8 +47,8 @@ const SpecialPropositionSection: FC<ISpecialPropositionSection> = ({ sectionTitl
   }, [windowWidth]);
 
   const onPrev = () => {
-    goodsPage == (2) && setPrevBtnDisable('disable');
-    if (goodsPage == 1) {
+    goodsPage === (2) && setPrevBtnDisable('disable');
+    if (goodsPage === 1) {
       return
     } else {
       setVisible('from-right')
@@ -60,8 +60,8 @@ const SpecialPropositionSection: FC<ISpecialPropositionSection> = ({ sectionTitl
   };
 
   const onNext = () => {
-    goodsPage == (totalPagesCount - 1) && setNextBtnDisable('disable');
-    if (goodsPage == totalPagesCount) {
+    goodsPage === (totalPagesCount - 1) && setNextBtnDisable('disable');
+    if (goodsPage === totalPagesCount) {
       return
     } else {
       setVisible('from-left')

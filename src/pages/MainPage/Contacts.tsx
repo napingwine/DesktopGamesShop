@@ -68,7 +68,7 @@ const Contacts = () => {
         <div className="agreement-warning">Нажимая на кнопку "Заказать звонок", я даю <span onClick={agreamentWarning}>согласие на обработку персональных данных.</span></div>
       </form>
 
-      <iframe className='main-page__section-about-us__contacts__map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686.8191991038835!2d30.744957503098806!3d46.48283127834849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631989c254e39%3A0xe81b613c774816d3!2z0YPQuy4g0JTQtdGA0LjQsdCw0YHQvtCy0YHQutCw0Y8sIDcsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDY1MDAx!5e0!3m2!1sru!2snl!4v1654208089387!5m2!1sru!2snl" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      <iframe className='main-page__section-about-us__contacts__map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686.8191991038835!2d30.744957503098806!3d46.48283127834849!2m3!1f0!2f0!3f0!3m2!1i1024!2i769!4f13.1!3m3!1m2!1s0x40c631989c254e39%3A0xe81b613c774816d3!2z0YPQuy4g0JTQtdGA0LjQsdCw0YHQvtCy0YHQutCw0Y8sIDcsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDY1MDAx!5e0!3m2!1sru!2snl!4v1654208089387!5m2!1sru!2snl" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     </section>
   );
 };

@@ -1,5 +1,6 @@
 .GameShoppingCard {
   width:255px;
+  height: 410px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,8 +23,6 @@
       line-height: 22px;
       letter-spacing: 0em;
       text-align: left;
-      
-
       color: white;
       position: absolute;
       top: 0;
@@ -33,7 +32,6 @@
       padding: 5px 15px;
     }
   }
-  
   
   &__infoGroup {
     width: 100%;
@@ -87,5 +85,10 @@
         }
       }
     }
+  }
+
+  &__buttonSection {
+    display: grid;
+    grid-gap: 10px;
   }
 }

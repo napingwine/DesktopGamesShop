@@ -12,6 +12,8 @@ const BurgerMenu: FC<IBurgerMenu> = ({ burgerMenuOpen, textForBurger }) => {
     document.querySelector('.burger-icon__menu-btn').setAttribute('aria-expanded', `${!document.querySelector('.burger-icon__menu-btn').getAttribute('aria-expanded')}`)
   }, [burgerMenuOpen])
 
+
+
   return (
     <div className="burger">
       <div className="burger-icon">

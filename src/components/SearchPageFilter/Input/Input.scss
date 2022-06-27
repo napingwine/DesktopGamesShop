@@ -1,0 +1,32 @@
+.range-slider {
+  display: grid;
+  grid-template-areas: 
+  'min  max'
+  'slider slider'
+  ;
+  grid-gap: 5px;
+  
+  &__input-title {
+    padding-right: 5px;
+  }
+
+  &__input-max ,
+  &__input-min {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0.7;
+  }
+
+  &__input-max {
+    grid-area: max;
+  }
+
+  &__input-min {
+    grid-area: min;
+  }
+
+  &__slider {
+    grid-area: slider;
+  }
+}

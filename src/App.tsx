@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router';
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
-import AboutUs from './pages/AboutUs/AboutUs';
-import MainPage from './pages/MainPage/MainPage';
-import Events from './pages/Events/Events';
-import Contacts from './pages/Contacts/Contacts';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import AboutUs from './pages/AboutUs';
+import MainPage from './pages/MainPage';
+import Events from './pages/Events';
+import Contacts from './pages/Contacts';
+import Footer from './components/Footer';
+import Catalogue from './pages/Catalogue';
+import Menu from './components/Menu';
 import './styles/app.scss';
-import Footer from './components/Footer/Footer';
-import Catalogue from './pages/Catalogue/Catalogue';
 
 const App = () => {
+  const [burgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    burgerMenuOpen ? document.body.classList.add('popup-active') : document.body.classList.remove('popup-active')
+  }, [burgerMenuOpen])
+
   return (
     <div className='app'>
-      {/* <Header />
-      <Navbar /> */}
+      <Header setBurgerMenuOpen={setBurgerMenuOpen} burgerMenuOpen={burgerMenuOpen}/>
+      <Navbar setBurgerMenuOpen={setBurgerMenuOpen} burgerMenuOpen={burgerMenuOpen} />
       <main className="main-content">
         <RoutesSection />
       </main>
       <Footer />
+      <div className={`menu ${burgerMenuOpen ? 'active' : 'inert'}`} onClick={() => setBurgerMenuOpen(!burgerMenuOpen)}>
+        {burgerMenuOpen && <Menu burgerMenuOpen={burgerMenuOpen} setBurgerMenuOpen={setBurgerMenuOpen} />}
+      </div>
     </div>
   );
 };

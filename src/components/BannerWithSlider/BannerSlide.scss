@@ -3,7 +3,7 @@
   overflow: hidden;
   img {
     max-height: 220px;
-    @media(min-width: 767px){
+    @media(min-width: 769px){
       max-height: 320px;
     }  
   }
@@ -31,7 +31,7 @@
     justify-content: space-evenly;
     padding: 15px;
     
-    @media(min-width: 767px){
+    @media(min-width: 769px){
       justify-content: space-between;
       align-items: flex-end;
       flex-direction: row;
@@ -52,7 +52,7 @@
 
     h2 {
       font-size: 26px;
-      @media(min-width: 767px){
+      @media(min-width: 769px){
         font-size: 28px;
       }
     }
@@ -69,7 +69,7 @@
   }
 
   .swiper-pagination {
-    @media(min-width: 767px){
+    @media(min-width: 769px){
       display: none;
     }
   }
@@ -97,7 +97,7 @@
       font-size: inherit;
       color: #FFF;
     }
-    @media(min-width: 767px){
+    @media(min-width: 769px){
       display: flex;
     }
   }

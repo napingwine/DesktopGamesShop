@@ -1,15 +1,16 @@
 .menu-wrapper {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
   cursor: default;
   display: grid;
   grid-template-areas: 
   'c sc';
   grid-template-columns: 1fr 3fr;
-  max-width: 1110px;
-  width: 100%;
+  width: 100vw;
   background: #FFFBF8;
   box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
-  margin-top: 81px;
   height: fit-content;
 
   .close-cross {

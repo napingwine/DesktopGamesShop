@@ -1,11 +1,13 @@
 .special-proposition-section { 
   position: relative;
   padding-bottom: 30px;
-  @media (min-width: 767px){
+  overflow: hidden;
+  @media (min-width: 769px){
     padding-bottom: 60px;
   }
-  @media (min-width: 1024px){
+  @media (min-width: 1124px){
     padding-bottom: 85px;
+    overflow: visible;
   }
 
   &__title {
@@ -13,7 +15,7 @@
     padding-bottom: 15px;
     font-weight: bold;
 
-    @media (min-width: 767px){
+    @media (min-width: 769px){
       font-size: 26px;
     }
   }

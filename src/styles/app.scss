@@ -48,3 +48,39 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+img.proportion-width {
+  width: 100%;
+}
+
+img.proportion-height {
+  height: 100%;
+}
+
+.popup-active {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.menu {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  right: 0;
+  &.active {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(42, 42, 42, 0.65);
+  }
+
+  &-wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 0;
+    @media (min-width:769px) {
+      margin-top: 81px;
+    }
+  }
+}

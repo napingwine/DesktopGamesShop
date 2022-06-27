@@ -1,7 +1,15 @@
 .header {
-  padding: 20px 0 ;
-  width: 100vw;
+  padding: 20px 15px;
   background: #2A2A2A;
+  @media (min-width: 1124px) {
+    padding: 20px 0;
+  }
+
+  &-burger {
+    @media (min-width:768px) {
+      display: none;
+    }
+  }
 
   &__logo {
     cursor: pointer;
@@ -13,6 +21,10 @@
 
   &__search {
     width: 475px;
+    display: none;
+    @media (min-width: 769px) {
+      display: block;
+    }
     & > * {
       width: 100%;
     }
@@ -27,19 +39,31 @@
   }
 
   &__contact-phone {
-    color: white;
-    display: flex;
-    align-items: center;
-    font-family: 'Trebuchet MS Bold', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s linear all;
-    &:hover {
-      transform: scale(1.1);
-    }
+    display: none;
 
-    &__icon {
-      margin-right: 10px;
+    @media (min-width: 769px) {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-family: 'Trebuchet MS Bold', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s linear all;
+      &:hover {
+        transform: scale(1.1);
+      }
+  
+      &__icon {
+        margin-right: 10px;
+      }
+
+      &__number {
+        display: none;
+        @media (min-width: 980px) {
+          display: block;
+        }
+    
+      }
     }
   }
 

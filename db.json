@@ -1,211 +1,914 @@
 {
   "goods": [
     {
-      "id": 1,
-      "title": "Broken Realms: Horrek's Dreadlance",
-      "price": 3214,
-      "hurryToBy": true,
+      "category": "Настольные игры",
+      "subCategory": "Ролевые игры",
+      "title": "mollitia saepe id dolorum",
+      "price": 7349,
+      "amount": 8,
       "sale": 0,
-      "audience": "2-4",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/1.png"
+      "audience": [
+        2,
+        5
+      ],
+      "estimatedGameTime": [
+        10,
+        90
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/4.png",
+      "byOrder": false,
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "Marse: tra-tata-t-a-t",
-      "price": 3214,
+      "category": "Настольные игры",
+      "subCategory": "Игры для двоих",
+      "title": "officia tempora tempora et quod mollitia quae quibusdam",
+      "price": 22598,
+      "amount": 4,
+      "sale": 0,
+      "audience": [
+        2,
+        9
+      ],
+      "estimatedGameTime": [
+        38,
+        53
+      ],
+      "age": [
+        6,
+        10
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/6.png",
+      "byOrder": false,
+      "id": 2
+    },
+    {
+      "category": "Настольные игры",
+      "subCategory": "Игры для компаний",
+      "title": "et commodi dolorum laudantium",
+      "price": 30819,
+      "amount": 7,
+      "sale": 18,
+      "audience": [
+        3,
+        4
+      ],
+      "estimatedGameTime": [
+        50,
+        75
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/6.png",
+      "byOrder": false,
+      "id": 3
+    },
+    {
+      "category": "Настольные игры",
+      "subCategory": "Стратегические игры",
+      "title": "distinctio similique molestiae dolor asperiores consectetur elit expedita aliquam",
+      "price": 38904,
+      "amount": 4,
+      "sale": 48,
+      "audience": [
+        3,
+        7
+      ],
+      "estimatedGameTime": [
+        69,
+        70
+      ],
+      "age": [
+        6,
+        8
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/7.png",
+      "byOrder": false,
+      "id": 4
+    },
+    {
+      "category": "Настольные игры",
+      "subCategory": "Кооперативные игры",
+      "title": "excepturi laudantium similique adipisicing sequi eos nesciunt",
+      "price": 37524,
+      "amount": 9,
+      "sale": 0,
+      "audience": [
+        2,
+        3
+      ],
+      "estimatedGameTime": [
+        23,
+        76
+      ],
+      "age": [
+        8,
+        16
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/7.png",
+      "byOrder": true,
+      "id": 5
+    },
+    {
+      "category": "Настольные игры",
+      "subCategory": "Логические игры",
+      "title": "consequuntur sint nihil dolor dolores error temporibus vero",
+      "price": 39099,
+      "amount":0,
+      "sale": 89,
+      "audience": [
+        3,
+        5
+      ],
+      "estimatedGameTime": [
+        34,
+        37
+      ],
+      "age": [
+        7,
+        9
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/6.png",
+      "byOrder": false,
+      "id": 6
+    },
+    {
+      "category": "Настольные игры",
+      "subCategory": "Игры для детей",
+      "title": "porro rerum et doloribus",
+      "price": 27633,
+      "amount": 8,
+      "sale": 0,
+      "audience": [
+        2,
+        4
+      ],
+      "estimatedGameTime": [
+        25,
+        61
+      ],
+      "age": [
+        11,
+        12
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/6.png",
+      "byOrder": false,
+      "id": 7
+    },
+    {
+      "category": "Magic: The Gathering",
+      "subCategory": "Иннистрад: Полночна Охота",
+      "title": "excepturi impedit esse quae dolorum Corporis consequuntur",
+      "price": 18119,
+      "amount": 4,
+      "sale": 0,
+      "audience": [
+        8,
+        9
+      ],
+      "estimatedGameTime": [
+        45,
+        48
+      ],
+      "age": [
+        9,
+        16
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/3.png",
+      "byOrder": false,
+      "id": 8
+    },
+    {
+      "category": "Magic: The Gathering",
+      "subCategory": "Приключения в Забытых Королевствах",
+      "title": "adipisci quisquam voluptatum consectetur consectetur dolorum nihil aperiam",
+      "price": 5152,
+      "amount": 2,
+      "sale": 0,
+      "audience": [
+        6,
+        8
+      ],
+      "estimatedGameTime": [
+        71,
+        81
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/2.png",
+      "byOrder": false,
+      "id": 9
+    },
+    {
+      "category": "Magic: The Gathering",
+      "subCategory": "Иннистрад: Багровая Клятва",
+      "title": "quis Lorem quaerat doloribus aperiam vel eos reprehenderit",
+      "price": 19219,
+      "amount": 1,
+      "sale": 0,
+      "audience": [
+        8,
+        9
+      ],
+      "estimatedGameTime": [
+        18,
+        74
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/1.png",
+      "byOrder": false,
+      "id": 10
+    },
+    {
+      "category": "Magic: The Gathering",
+      "subCategory": "Расцвет Зендикара",
+      "title": "commodi non adipisci non",
+      "price": 15464,
+      "amount": 3,
+      "sale": 0,
+      "audience": [
+        1,
+        4
+      ],
+      "estimatedGameTime": [
+        63,
+        64
+      ],
+      "age": [
+        5,
+        10
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/3.png",
+      "byOrder": false,
+      "id": 11
+    },
+    {
+      "category": "Magic: The Gathering",
+      "subCategory": "Калдхайм",
+      "title": "Corporis expedita sit commodi saepe nesciunt quisquam a saepe",
+      "price": 36202,
+      "amount": 4,
+      "sale": 28,
+      "audience": [
+        3,
+        8
+      ],
+      "estimatedGameTime": [
+        51,
+        67
+      ],
+      "age": [
+        9,
+        15
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/5.png",
+      "byOrder": false,
+      "id": 12
+    },
+    {
+      "category": "Magic: The Gathering",
+      "subCategory": "Стриксхейвен",
+      "title": "reprehenderit sint sit id dolore",
+      "price": 26747,
+      "amount": 2,
+      "sale": 1,
+      "audience": [
+        1,
+        9
+      ],
+      "estimatedGameTime": [
+        10,
+        27
+      ],
+      "age": [
+        9,
+        11
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/4.png",
+      "byOrder": false,
+      "id": 13
+    },
+    {
+      "category": "Magic: The Gathering",
+      "subCategory": "Специальные выпуски",
+      "title": "quasi doloribus error porro tempora quod laudantium laudantium",
+      "price": 43640,
+      "amount": 8,
       "sale": 15,
-      "audience": "1-4",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/2.png"
+      "audience": [
+        3,
+        4
+      ],
+      "estimatedGameTime": [
+        27,
+        78
+      ],
+      "age": [
+        5,
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/1.png",
+      "byOrder": false,
+      "id": 14
     },
     {
-      "id": 3,
-      "title": "Broken Realms: Horrek's Dreadlance",
-      "price": 314,
-      "sale": 15,
-      "audience": "2-4",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/3.png"
-    },
-    {
-      "id": 4,
-      "title": "Some more games: version huersion",
-      "price": 3264,
-      "sale": 25,
-      "audience": "2-5",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/4.png"
-    },
-    {
-      "id": 5,
-      "title": "Magic: The fathering hujatering",
-      "price": 378914,
-      "hurryToBy": true,
+      "category": "Magic: The Gathering",
+      "subCategory": "Старые выпуски",
+      "title": "similique dolores quisquam Dicta impedit mollitia fugit quod",
+      "price": 42944,
+      "amount": 4,
       "sale": 0,
-      "audience": "2-4",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/1.png"
+      "audience": [
+        1,
+        4
+      ],
+      "estimatedGameTime": [
+        21,
+        44
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/3.png",
+      "byOrder": false,
+      "id": 15
     },
     {
-      "id": 6,
-      "title": "Broken Realms: Horrek's Dreadlance",
-      "price": 327,
-      "sale": 15,
-      "audience": "1-4",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/2.png"
-    },
-    {
-      "id": 7,
-      "title": "Broken Realms: very new game",
-      "price": 35214,
-      "hurryToBy": true,
+      "category": "Варгеймы",
+      "subCategory": "Warhammer 40k",
+      "title": "consequuntur eos distinctio porro Minima quia voluptatum dolores",
+      "price": 5454,
+      "amount": 1,
       "sale": 0,
-      "audience": "2-4",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/3.png"
+      "audience": [
+        3,
+        8
+      ],
+      "estimatedGameTime": [
+        51,
+        85
+      ],
+      "age": [
+        6,
+        6
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/4.png",
+      "byOrder": false,
+      "id": 16
     },
     {
-      "id": 8,
-      "title": "Broken Realms: Horrek's Dreadlance",
-      "price": 35674,
-      "sale": 15,
-      "audience": "2-2",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/4.png"
+      "category": "Варгеймы",
+      "subCategory": "Age of Sigmar",
+      "title": "sint dolorum elit dolorum eveniet ex saepe",
+      "price": 39044,
+      "amount": 1,
+      "sale": 56,
+      "audience": [
+        1,
+        7
+      ],
+      "estimatedGameTime": [
+        46,
+        54
+      ],
+      "age": [
+        12,
+        17
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/8.png",
+      "byOrder": false,
+      "id": 17
     },
     {
-      "id": 9,
-      "title": "Broken Realms: Bla-bla-lba",
-      "price": 3567,
-      "sale": 15,
-      "audience": "2-4",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/1.png"
+      "category": "Варгеймы",
+      "subCategory": "Warcry",
+      "title": "Minima quod fugit id",
+      "price": 23192,
+      "amount": 2,
+      "sale": 3,
+      "audience": [
+        8,
+        9
+      ],
+      "estimatedGameTime": [
+        62,
+        86
+      ],
+      "age": [
+        7,
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/8.png",
+      "byOrder": false,
+      "id": 18
     },
     {
-      "id": 10,
-      "title": "Broken Realms: Horrek's Dreadlance",
-      "price": 4564,
-      "sale": 35,
-      "audience": "1-4",
-      "estimatedGameTime": "30-60",
-      "age": "12-18",
-      "photoURL": "http://localhost:5000/shoppingCardImages/2.png"
-    },
-    {
-      "id": 11,
-      "title": "Звездные войны Внешнее кольцо",
-      "price": 1200,
+      "category": "Варгеймы",
+      "subCategory": "Warcry Warhammer: Underworlds",
+      "title": "eos aliquid sequi excepturi Minima",
+      "price": 8804,
+      "amount": 5,
       "sale": 0,
-      "audience": "3-4",
-      "estimatedGameTime": "40-60",
-      "age": "6-90",
-      "photoURL": "http://localhost:5000/shoppingCardImages/5.png"
+      "audience": [
+        6,
+        9
+      ],
+      "estimatedGameTime": [
+        24,
+        54
+      ],
+      "age": [
+        9,
+        16
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/3.png",
+      "byOrder": false,
+      "id": 19
     },
     {
-      "id": 12,
-      "title": "Таверна Красный дракон",
-      "price": 700,
+      "category": "Варгеймы",
+      "subCategory": "Killteam",
+      "title": "voluptatum rerum molestiae quaerat excepturi nihil officiis totam porro",
+      "price": 10066,
+      "amount": 6,
       "sale": 0,
-      "audience": "1-10",
-      "estimatedGameTime": "30-60",
-      "age": "4-90",
-      "photoURL": "http://localhost:5000/shoppingCardImages/6.png"
+      "audience": [
+        3,
+        6
+      ],
+      "estimatedGameTime": [
+        61,
+        69
+      ],
+      "age": [
+        10,
+        17
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/1.png",
+      "byOrder": false,
+      "id": 20
     },
     {
-      "id": 13,
-      "title": "Гравити Фолз: Спасти Пухлю",
-      "price": 1700,
-      "hurryToBy": true,
+      "category": "Варгеймы",
+      "subCategory": "Necromunda",
+      "title": "dicta aliquid doloribus ipsum excepturi",
+      "price": 42426,
+      "amount": 9,
       "sale": 0,
-      "audience": "1-10",
-      "estimatedGameTime": "30-60",
-      "age": "4-90",
-      "photoURL": "http://localhost:5000/shoppingCardImages/6.png"
+      "audience": [
+        5,
+        9
+      ],
+      "estimatedGameTime": [
+        32,
+        56
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/7.png",
+      "byOrder": false,
+      "id": 21
     },
     {
-      "id": 14,
-      "title": "Звездные войны Внешнее кольцо",
-      "price": 1200,
-      "hurryToBy": true,
-      "sale": 7,
-      "audience": "3-4",
-      "estimatedGameTime": "40-60",
-      "age": "6-90",
-      "photoURL": "http://localhost:5000/shoppingCardImages/5.png"
-    },
-    {
-      "id": 15,
-      "title": "Таверна Красный дракон",
-      "price": 700,
-      "sale": 10,
-      "audience": "1-10",
-      "estimatedGameTime": "30-60",
-      "age": "4-90",
-      "photoURL": "http://localhost:5000/shoppingCardImages/7.png"
-    },
-    {
-      "id": 16,
-      "title": "Гравити Фолз: Спасти Пухлю",
-      "price": 1700,
+      "category": "Варгеймы",
+      "subCategory": "Lord of the Rings",
+      "title": "laboriosam aperiam a Dicta quia doloribus Lorem molestiae asperiores",
+      "price": 26853,
+      "amount": 4,
       "sale": 0,
-      "audience": "1-10",
-      "estimatedGameTime": "30-60",
-      "age": "4-90",
-      "photoURL": "http://localhost:5000/shoppingCardImages/7.png"
+      "audience": [
+        4,
+        6
+      ],
+      "estimatedGameTime": [
+        28,
+        99
+      ],
+      "age": [
+        5,
+        10
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/5.png",
+      "byOrder": false,
+      "id": 22
     },
     {
-      "id": 17,
-      "title": "Вампирский Манчкин",
-      "price": 500,
-      "hurryToBy": true,
+      "category": "Варгеймы",
+      "subCategory": "Blood Bowl",
+      "title": "fugit ipsum harum saepe quia quis totam",
+      "price": 21816,
+      "amount": 9,
       "sale": 0,
-      "audience": "1-10",
-      "estimatedGameTime": "30-60",
-      "age": "6+",
-      "photoURL": "http://localhost:5000/shoppingCardImages/9.png"
+      "audience": [
+        3,
+        6
+      ],
+      "estimatedGameTime": [
+        13,
+        91
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/6.png",
+      "byOrder": false,
+      "id": 23
     },
     {
-      "id": 18,
-      "title": "Вампирский Манчкин",
-      "price": 500,
-      "hurryToBy": true,
-      "sale": 10,
-      "audience": "1-10",
-      "estimatedGameTime": "30-60",
-      "age": "6+",
-      "photoURL": "http://localhost:5000/shoppingCardImages/9.png"
-    },
-    {
-      "id": 19,
-      "title": "Warhammer 40,000: Craftworlds Farseer",
-      "price": 1500,
-      "sale": 10,
-      "audience": "1-10",
-      "estimatedGameTime": "30-60",
-      "age": "6+",
-      "photoURL": "http://localhost:5000/shoppingCardImages/10.png"
-    },
-    {
-      "id": 20,
-      "title": "Warhammer 40,000: Craftworlds Farseer",
-      "price": 1500,
+      "category": "Варгеймы",
+      "subCategory": "Titanicus",
+      "title": "aliquid impedit deleniti deleniti",
+      "price": 43121,
+      "amount": 3,
       "sale": 0,
-      "audience": "1-10",
-      "estimatedGameTime": "30-60",
-      "age": "6+",
-      "photoURL": "http://localhost:5000/shoppingCardImages/10.png"
+      "audience": [
+        6,
+        7
+      ],
+      "estimatedGameTime": [
+        14,
+        52
+      ],
+      "age": [
+        6,
+        15
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/2.png",
+      "byOrder": false,
+      "id": 24
+    },
+    {
+      "category": "Варгеймы",
+      "subCategory": "Террейн",
+      "title": "dicta beatae officia similique",
+      "price": 36679,
+      "amount": 9,
+      "sale": 63,
+      "audience": [
+        1,
+        2
+      ],
+      "estimatedGameTime": [
+        28,
+        70
+      ],
+      "age": [
+        11,
+        17
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/5.png",
+      "byOrder": false,
+      "id": 25
+    },
+    {
+      "category": "Варгеймы",
+      "subCategory": "Альтернативные миниатюры",
+      "title": "Deserunt enim Minima sint quibusdam expedita quia totam",
+      "price": 44367,
+      "amount": 1,
+      "sale": 0,
+      "audience": [
+        3,
+        9
+      ],
+      "estimatedGameTime": [
+        26,
+        43
+      ],
+      "age": [
+        6,
+        12
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/8.png",
+      "byOrder": false,
+      "id": 26
+    },
+    {
+      "category": "Краски",
+      "subCategory": "Citadel",
+      "title": "esse totam Optio Dolorem quaerat quod sit molestiae",
+      "price": 12937,
+      "amount": 7,
+      "sale": 0,
+      "audience": [
+        5,
+        6
+      ],
+      "estimatedGameTime": [
+        30,
+        42
+      ],
+      "age": [
+        14,
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/9.png",
+      "byOrder": false,
+      "id": 27
+    },
+    {
+      "category": "Краски",
+      "subCategory": "Bosny",
+      "title": "officiis impedit amet a nihil",
+      "price": 36746,
+      "amount": 4,
+      "sale": 0,
+      "audience": [
+        6,
+        8
+      ],
+      "estimatedGameTime": [
+        82,
+        86
+      ],
+      "age": [
+        8,
+        15
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/8.png",
+      "byOrder": false,
+      "id": 28
+    },
+    {
+      "category": "Краски",
+      "subCategory": "Vallejo",
+      "title": "amet nesciunt Deserunt Corporis similique enim aliquid porro",
+      "price": 1335,
+      "amount": 6,
+      "sale": 0,
+      "audience": [
+        6,
+        8
+      ],
+      "estimatedGameTime": [
+        94,
+        95
+      ],
+      "age": [
+        5,
+        13
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/6.png",
+      "byOrder": false,
+      "id": 29
+    },
+    {
+      "category": "Краски",
+      "subCategory": "Zip Maket",
+      "title": "deleniti et id quibusdam quod officia",
+      "price": 16054,
+      "amount": 1,
+      "sale": 80,
+      "audience": [
+        1,
+        4
+      ],
+      "estimatedGameTime": [
+        33,
+        55
+      ],
+      "age": [
+        6,
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/8.png",
+      "byOrder": false,
+      "id": 30
+    },
+    {
+      "category": "Аксессуары для игр",
+      "subCategory": "Протекторы",
+      "title": "laudantium laboriosam saepe non quia amet Dolorem sequi asperiores",
+      "price": 49179,
+      "amount": 9,
+      "sale": 0,
+      "audience": [
+        1,
+        2
+      ],
+      "estimatedGameTime": [
+        32,
+        64
+      ],
+      "age": [
+        9,
+        17
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/9.png",
+      "byOrder": false,
+      "id": 31
+    },
+    {
+      "category": "Аксессуары для игр",
+      "subCategory": "Альбомы",
+      "title": "ipsum totam Corporis vel",
+      "price": 48525,
+      "amount": 5,
+      "sale": 84,
+      "audience": [
+        5,
+        7
+      ],
+      "estimatedGameTime": [
+        10,
+        55
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/3.png",
+      "byOrder": false,
+      "id": 32
+    },
+    {
+      "category": "Аксессуары для игр",
+      "subCategory": "Коробочки",
+      "title": "quisquam reprehenderit commodi beatae",
+      "price": 42906,
+      "amount": 5,
+      "sale": 0,
+      "audience": [
+        4,
+        8
+      ],
+      "estimatedGameTime": [
+        15,
+        67
+      ],
+      "age": [
+        12,
+        17
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/1.png",
+      "byOrder": false,
+      "id": 33
+    },
+    {
+      "category": "Аксессуары для игр",
+      "subCategory": "Кубики",
+      "title": "consequuntur dolorum ipsum laudantium similique",
+      "price": 29169,
+      "amount": 7,
+      "sale": 88,
+      "audience": [
+        9,
+        10
+      ],
+      "estimatedGameTime": [
+        20,
+        89
+      ],
+      "age": [
+        7,
+        8
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/3.png",
+      "byOrder": false,
+      "id": 34
+    },
+    {
+      "category": "Аксессуары для игр",
+      "subCategory": "Коврики",
+      "title": "consectetur amet aliquid voluptatum",
+      "price": 43723,
+      "amount": 2,
+      "sale": 33,
+      "audience": [
+        4,
+        5
+      ],
+      "estimatedGameTime": [
+        26,
+        75
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/7.png",
+      "byOrder": false,
+      "id": 35
+    },
+    {
+      "category": "Аксессуары для игр",
+      "subCategory": "Мешочки",
+      "title": "mollitia labore dolorum quaerat dolores sint dolorum Lorem reprehenderit",
+      "price": 33332,
+      "amount": 1,
+      "sale": 0,
+      "audience": [
+        3,
+        9
+      ],
+      "estimatedGameTime": [
+        13,
+        32
+      ],
+      "age": [
+        7,
+        17
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/1.png",
+      "byOrder": false,
+      "id": 36
+    },
+    {
+      "category": "Аксессуары для моделизма",
+      "subCategory": "Кисти",
+      "title": "nihil ipsum temporibus nesciunt quasi cum",
+      "price": 2595,
+      "amount": 6,
+      "sale": 0,
+      "audience": [
+        3,
+        6
+      ],
+      "estimatedGameTime": [
+        15,
+        86
+      ],
+      "age": [
+        8,
+        16
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/6.png",
+      "byOrder": false,
+      "id": 37
+    },
+    {
+      "category": "Аксессуары для моделизма",
+      "subCategory": "Инструменты",
+      "title": "eveniet esse expedita a",
+      "price": 22614,
+      "amount": 3,
+      "sale": 77,
+      "audience": [
+        6,
+        8
+      ],
+      "estimatedGameTime": [
+        22,
+        62
+      ],
+      "age": [
+        6,
+        17
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/4.png",
+      "byOrder": false,
+      "id": 38
+    },
+    {
+      "category": "Аксессуары для моделизма",
+      "subCategory": "Декорации",
+      "title": "similique quis totam ex",
+      "price": 34668,
+      "amount": 9,
+      "sale": 0,
+      "audience": [
+        2,
+        3
+      ],
+      "estimatedGameTime": [
+        18,
+        72
+      ],
+      "age": [
+        11,
+        13
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/5.png",
+      "byOrder": false,
+      "id": 39
+    },
+    {
+      "category": "Аксессуары для моделизма",
+      "subCategory": "Подставки",
+      "title": "debitis reprehenderit porro dolor a",
+      "price": 18551,
+      "amount": 9,
+      "sale": 0,
+      "audience": [
+        1,
+        8
+      ],
+      "estimatedGameTime": [
+        47,
+        59
+      ],
+      "age": [
+        18
+      ],
+      "photoURL": "http://localhost:5000/shoppingCardImages/4.png",
+      "byOrder": false,
+      "id": 40
     }
   ],
   "bannerMainPage": [

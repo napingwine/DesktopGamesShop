@@ -8,7 +8,8 @@ import useWindowDimensions from "./useWindowDimensions"
  * return string 'proportion-width' or 'proportion-height'
  * 
  */
-export default function useElementDimensionsProportion(element: any, photoURL: string) {
+
+export default function useElementAndImageInsideDimensionsProportion(element: any, photoURL: string) {
   const [imgProportions, setImgProportions] = useState<number>(1);
   const [blockProportions, setBlockProportions] = useState<number>(1);
   const [proportionClassForImg, setProportionClassForImg] = useState<string>('proportion-width');
@@ -30,7 +31,7 @@ export default function useElementDimensionsProportion(element: any, photoURL: s
     } else {
       setProportionClassForImg('proportion-height');
     }
-  }, [blockProportions, windowWidth]);
+  }, [windowWidth]);
 
   return proportionClassForImg;
 }

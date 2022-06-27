@@ -21,7 +21,7 @@ const BannerSlider = ({ slidesData, buttonListener }) => {
         navigation
         pagination
         breakpoints={{
-          767: {
+          769: {
             centeredSlides: true,
           },
         }}

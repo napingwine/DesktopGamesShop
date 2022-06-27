@@ -3,7 +3,30 @@
   background: #FBFAFA;
   border: #F2F2F2 1px solid;
   border-radius: 9px;
-  padding: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 12px;
+  display: grid;
+  grid-template-areas:
+  'text button'
+  ;
+  grid-template-columns: 9fr 1fr;
+  overflow: hidden;
+  padding: 8px;
+
+  &__text-area {
+    grid-area: text;
+    border: none;
+    background: none;
+  }
+  
+  &__button {
+    grid-area: button;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

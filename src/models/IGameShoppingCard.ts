@@ -1,12 +1,13 @@
-export default interface IGameShoppingCard{
-  price: number,
+export default interface IGameShoppingCar {
+  id: number,
   title: string,
-  audience: string,
-  estimatedGameTime: string,
-  age: string,
+  price: number,
+  audience: Array<number>,
+  estimatedGameTime: Array<number>,
+  age: Array<number>,
+  amount?: number
   photoURL: string,
-  addToCart: ()=> void,
-  byInOneClick: ()=> void,
-  sale? : number,
-  hurryToBy?: boolean
+  addToCart: () => void,
+  byInOneClick: () => void,
+  sale?: number,
 }
