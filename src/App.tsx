@@ -7,7 +7,7 @@ import MainPage from './pages/MainPage';
 import Events from './pages/Events';
 import Contacts from './pages/Contacts';
 import Footer from './components/Footer';
-import Catalogue from './pages/Catalogue';
+import Catalogue from './pages/Catalogue/Catalogue';
 import Menu from './components/Menu';
 import './styles/app.scss';
 

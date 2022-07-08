@@ -7,11 +7,14 @@ export const searchService = createApi({
   reducerPath: 'searchService',
   baseQuery: fetchBaseQuery({ baseUrl: baseURL }),
   endpoints: (build) => ({
-    fetchData: build.query<IGood[], IQueryParams>({
+    fetchData: build.query<{apiResponse: IGood[],totalCount: number}, IQueryParams>({
       query: (queryParams) => ({
         url: 'goods',
         params: { ...queryParams }
       }),
+      transformResponse(apiResponse: IGood[], meta) {
+        return { apiResponse, totalCount: Number(meta?.response?.headers.get('X-Total-Count')) }
+      }
     }),
   })
 })
