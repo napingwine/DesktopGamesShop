@@ -6,9 +6,9 @@ import AboutUs from './pages/AboutUs';
 import MainPage from './pages/MainPage';
 import Events from './pages/Events';
 import Contacts from './pages/Contacts';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Catalogue from './pages/Catalogue/Catalogue';
-import Menu from './components/Menu';
+import Menu from './components/Menu/Menu';
 import './styles/app.scss';
 
 const App = () => {

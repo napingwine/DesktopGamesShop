@@ -8,7 +8,7 @@ const Menu = ({ burgerMenuOpen, setBurgerMenuOpen }) => {
   const [activeCategory, setActiveCategory] = React.useState(0);
   const [currentCategory, setCurrentCategory] = React.useState(categories[0].categoryName);
 
-  const onCategoryClick = (el, i) => {
+  const onCategoryHover = (el, i) => {
     setActiveCategory(i);
     setCurrentCategory(el.categoryName)
   };
@@ -26,19 +26,32 @@ const Menu = ({ burgerMenuOpen, setBurgerMenuOpen }) => {
           </NavLink>
         </div>
         {categories.map((el, i) =>
-          <div
+          <NavLink
+            to={`catalogue?category=${el.categoryName}`}
             key={el.categoryName}
             className={`menu-wrapper__category-list__element ${activeCategory == i && 'active'}`}
-            onClick={() => onCategoryClick(el, i)}>
+            onMouseEnter={() => onCategoryHover(el, i)}
+            onClick={() => setBurgerMenuOpen(!burgerMenuOpen)}
+          >
             {el.categoryName}
-          </div>)}
+
+          </NavLink>)}
       </div>
       <div className="menu-wrapper__subcategory-list-wrapper">
         <div className="menu-wrapper__subcategory-list-wrapper__subcategory-title">
           {currentCategory}
         </div>
         <div className="menu-wrapper__subcategory-list-wrapper__subcategory-list">
-          {categories.filter(el => el.categoryName == currentCategory)[0].subCategories.map(el => <div key={el} className='menu-wrapper__subcategory-list-wrapper__subcategory-list__element'>{el}</div>)}
+          {categories.filter(el => el.categoryName == currentCategory)[0].subCategories.map(el =>
+            <NavLink
+              key={el}
+              to={`catalogue?category=${currentCategory}&subCategory=${el}`}
+              onClick={() => setBurgerMenuOpen(!burgerMenuOpen)}
+              className='menu-wrapper__subcategory-list-wrapper__subcategory-list__element'
+            >
+              {el}
+            </NavLink>
+          )}
         </div>
       </div>
     </div>

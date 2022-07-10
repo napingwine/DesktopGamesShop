@@ -39,11 +39,11 @@
       transform: rotate(-45deg);
       left: calc(-50% - 3px);
     }
-
   }
 
   &__category-list {
-
+    display: flex;
+    flex-direction: column;
     grid-area: c;
     border-right: 2px solid rgba(42, 42, 42, 0.26);
     padding-bottom: 30px;
@@ -65,11 +65,12 @@
       border-bottom: 2px solid rgba(42, 42, 42, 0.26);
       display: flex;
       align-items: center;
-      & a { 
-        color: #000;
-        text-decoration: none;
-      }
     }
+  }
+
+  a { 
+    color: #000;
+    text-decoration: none;
   }
 
   &__subcategory-list-wrapper {

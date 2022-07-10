@@ -25,19 +25,19 @@ const CatalogSection: FC = () => {
     <section className="container catalog">
       <h2 className="catalog__title">Каталог</h2>
       <div className="catalog__options">
-        <NavLink to='catalogue' className="catalog__options__option big" state={'Настольные игры'}>
+        <NavLink to='catalogue?category=Настольные+игры' className="catalog__options__option big" state={'Настольные игры'}>
           <img src={catalog1} alt="catalog Image" className='proportion-width' />
           <span>Настольные игры</span>
         </NavLink>
-        <NavLink to='catalogue' className="catalog__options__option small1" state={'Варгеймы'}>
+        <NavLink to='catalogue?category=Варгеймы' className="catalog__options__option small1" state={'Варгеймы'}>
           <img src={catalog2} alt="catalog Image" className='proportion-width' />
           <span>Варгеймы</span>
         </NavLink>
-        <NavLink to='catalogue' className="catalog__options__option small2" state={'Краски'}>
+        <NavLink to='catalogue?category=Краски' className="catalog__options__option small2" state={'Краски'}>
           <img src={catalog4} alt="catalog Image" className='proportion-width' />
           <span>Краски</span>
         </NavLink>
-        <NavLink to='catalogue' className="catalog__options__option small3" state={'Magic:the Cathering'}>
+        <NavLink to='catalogue?category=Magic%3A+The+Gathering' className="catalog__options__option small3" state={'Magic:the Cathering'}>
           <img src={catalog3} alt="catalog Image" className='proportion-width' />
           <span>Magic:the Cathering</span>
         </NavLink>
