@@ -18,6 +18,7 @@ const Catalogue = () => {
     searchParams.forEach((value, key) => filterData[key] = value)
     setSearchParams(filterData)
     setFilterData(filterData)
+    setCurrentPage(1)
   }, [searchParams]);
 
   const addToCart = () => {
@@ -37,12 +38,12 @@ const Catalogue = () => {
           {isError && <div>Error...</div>}
           {isLoading && <div>Loading...</div>}
           {data && data.apiResponse.map(el => <GameShoppingCard key={el.id} addToCart={addToCart} byInOneClick={byInOneClick} {...el} />)}
-        <Pagination
-          customClass={'pagination'}
-          totalCount={data?.totalCount}
-          limit={limit}
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage} />
+          <Pagination
+            customClass={'pagination'}
+            totalCount={data?.totalCount}
+            limit={limit}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage} />
         </div>
       </div>
     </div>

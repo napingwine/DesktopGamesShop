@@ -21,7 +21,7 @@ const RangeInputWithSlider: FC<IRangeInputWithSlider> = ({ maxValue, value, setV
     if (activeThumb === 0) {
       setValue([Math.min(newValue[0], value[1]), value[1]]);
     } else {
-      setValue([value[0], Math.max(newValue[1], value[0])]);
+      setValue([value[0], Math.max(newValue[1], +value[0])]);
     }
   };
 

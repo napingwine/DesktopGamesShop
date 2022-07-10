@@ -9,7 +9,7 @@ const CustomPagination = ({ totalCount, limit, currentPage, setCurrentPage, cust
   return (
     <div className={`pagination-wrapper ${customClass}`}>
       <Pagination
-        count={Math.ceil(totalCount / limit)}
+        count={totalCount ? Math.ceil(totalCount / limit) : 1}
         page={currentPage}
         onChange={handleChange}
       />
