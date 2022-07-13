@@ -9,17 +9,15 @@ import CustomButtonByIOneClick from '../Buttons/CustomButtonByIOneClick';
 import instagramIMG from '../../assets/Icons/instagram.png';
 import facebookIMG from '../../assets/Icons/fb.png';
 import twitterIMG from '../../assets/Icons/vk.png';
+import { useAppSelector } from '../../hooks/redux';
 
 const Footer = () => {
-  const [allCategories, setAllCategories] = useState([]);
-
-  useEffect(()=> {
-    setAllCategories(getCategories().map(category => <NavLink to='/catalogue' key={category.name} className='footer__wrapper__upper-section__column2__categories-list__item'>{category.name}</NavLink>))
-  },[]);
+  const categories = useAppSelector(state => state.categoryReducer.categories);
 
   const orderCallButtonListener = () => {
     console.log('orderCallButtonListener')
   }
+  console.log(categories)
 
   return (
     <footer className='footer'>
@@ -34,7 +32,7 @@ const Footer = () => {
           <div className="footer__wrapper__upper-section__column2">
             <NavLink to='/catalogue' className="footer__wrapper__upper-section__column2__title"><h3>Каталог</h3></NavLink>
             <div className="footer__wrapper__upper-section__column2__categories-list">
-              {allCategories}
+              {categories.map(category => <NavLink to={`/catalogue?category=${category.categoryName}`} key={category.categoryName} className='footer__wrapper__upper-section__column2__categories-list__item'>{category.categoryName}</NavLink>)}
             </div>
           </div>
           <div className="footer__wrapper__upper-section__column3">

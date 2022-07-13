@@ -29,7 +29,7 @@ const Menu = ({ burgerMenuOpen, setBurgerMenuOpen }) => {
           <NavLink
             to={`catalogue?category=${el.categoryName}`}
             key={el.categoryName}
-            className={`menu-wrapper__category-list__element ${activeCategory == i && 'active'}`}
+            className={`menu-wrapper__category-list__element ${activeCategory == i ? 'activeCategory' : ''}`}
             onMouseEnter={() => onCategoryHover(el, i)}
             onClick={() => setBurgerMenuOpen(!burgerMenuOpen)}
           >
