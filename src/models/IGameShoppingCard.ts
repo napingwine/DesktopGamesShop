@@ -7,7 +7,5 @@ export default interface IGameShoppingCar {
   age: Array<number>,
   amount?: number
   photoURL: string,
-  addToCart: () => void,
-  byInOneClick: () => void,
   sale?: number,
 }

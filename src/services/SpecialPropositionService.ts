@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 import { IGood } from '../models/IGood';
 import { IQueryParams } from '../models/IQueryParams';
-import { baseURL } from './_ServiceVariables'
+import { baseURL } from './_ServiceVariables';
 
 export const goodsAPI = createApi({
   reducerPath: 'goodsAPI',
@@ -17,4 +17,4 @@ export const goodsAPI = createApi({
       }
     }),
   })
-})
+});

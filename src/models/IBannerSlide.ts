@@ -3,4 +3,5 @@ export interface IBannerSlide {
   title : string,
   subTitle: string,
   imgURL: string,
+  id: number,
 }

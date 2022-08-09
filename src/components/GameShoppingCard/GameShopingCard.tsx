@@ -1,12 +1,23 @@
 import React, { FC } from 'react';
 import './GameShoppingCard.scss';
-import CustomButtonShop from '../../components/Buttons/CustomButton'
-import CustomButtonByIOneClick from '../../components/Buttons/CustomButtonByIOneClick';
+import CustomButtonShop from '../Buttons/CustomButton';
+import CustomButtonByIOneClick from '../Buttons/CustomButtonByIOneClick';
 import IGameShoppingCard from '../../models/IGameShoppingCard';
 import audienceIMG from '../../assets/Icons/audience.png';
 import clockIMG from '../../assets/Icons/Clock.png';
+import { useAppDispatch } from '../../hooks/redux';
+import { CartSlicer } from '../../store/reducer/CartSlice';
 
-const GameShoppingCard: FC<IGameShoppingCard> = ({ addToCart, price, sale, title, audience, estimatedGameTime, age, photoURL, byInOneClick, amount }) => {
+const GameShoppingCard: FC<IGameShoppingCard> = ({ price, sale, title, audience, estimatedGameTime, age, photoURL, id, amount }) => {
+  const dispatch = useAppDispatch();
+  const { addItemToCart } = CartSlicer.actions
+
+  const byInOneClick = () => {
+  };
+
+  const addToCart = () => {
+    dispatch(addItemToCart({ id, name: title, photo: photoURL, pcs: 1, price }));
+  };
 
   return (
     <div className='GameShoppingCard'>
@@ -21,7 +32,7 @@ const GameShoppingCard: FC<IGameShoppingCard> = ({ addToCart, price, sale, title
       </div>
       <p className="GameShoppingCard__name" title={title}>{title}</p>
       <div className="GameShoppingCard__price">
-        <div className={`GameShoppingCard__price__without-sale ${sale !==0 && 'old-price'}`}>{price} грн</div>
+        <div className={`GameShoppingCard__price__without-sale ${sale !== 0 && 'old-price'}`}>{price} грн</div>
         {sale !== 0 && <div className="GameShoppingCard__price__with-sale">{Math.round(price - (price * (sale / 100)))} грн</div>}
       </div>
       <div className="GameShoppingCard__buttonSection">

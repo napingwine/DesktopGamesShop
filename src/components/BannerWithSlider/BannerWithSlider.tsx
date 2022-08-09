@@ -15,7 +15,7 @@ const BannerWithSlider = () => {
     <div className='banner-with-slider__wrapper'>
       {isLoading && <h1>... IS LOADING</h1>}
       {error && <h1> Error... </h1>}
-      {slidesData && <BannerSlider slidesData={slidesData} buttonListener={slideButtonListener} />}
+      {slidesData && <BannerSlider slidesData={slidesData}/>}
     </div>
   );
 };

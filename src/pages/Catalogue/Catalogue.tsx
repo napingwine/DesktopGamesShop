@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import GameShoppingCard from '../../components/GameShoppingCard';
+import GameShoppingCard from '../../components/GameShoppingCard/GameShopingCard';
 import Pagination from '../../components/Pagination/Pagination';
 import SearchPageFilter from '../../components/SearchPageFilter/SearchPageFilter';
 import { searchService } from '../../services/SearchService';
@@ -37,7 +37,7 @@ const Catalogue = () => {
         <div className="search-result">
           {isError && <div>Error...</div>}
           {isLoading && <div>Loading...</div>}
-          {data && data.apiResponse.map(el => <GameShoppingCard key={el.id} addToCart={addToCart} byInOneClick={byInOneClick} {...el} />)}
+          {data && data.apiResponse.map(el => <GameShoppingCard key={el.id} {...el} />)}
           <Pagination
             customClass={'pagination'}
             totalCount={data?.totalCount}

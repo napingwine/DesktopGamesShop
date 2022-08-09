@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import GameShoppingCard from '../GameShoppingCard';
+import GameShoppingCard from '../GameShoppingCard/GameShopingCard';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import swipeListener from '../../helpers/swipeListener';
 import { IQueryParams } from '../../models/IQueryParams';

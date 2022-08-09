@@ -7,9 +7,6 @@ import { goodsAPI } from '../../services/SpecialPropositionService';
 import NearestEventsSection from '../../components/NearestEventsSection/NearestEventsSection';
 import CatalogSection from './CatalogSection/CatalogSection';
 
-import { doOnClick } from '../../FAKEAPIFUNCTIONS/CreateFakeItemsDataBase';
-import axios from 'axios';
-
 const MainPage: FC = () => {
   const addToCart = () => {
     console.log(1)

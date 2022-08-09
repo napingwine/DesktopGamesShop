@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 import IEventItem from '../models/IEventItem';
 import { IQueryParams } from '../models/IQueryParams';
-import { baseURL } from './_ServiceVariables'
+import { baseURL } from './_ServiceVariables';
 
 export const eventsAPI = createApi({
   reducerPath: 'eventsAPI',
@@ -17,4 +17,4 @@ export const eventsAPI = createApi({
       }
     }),
   })
-})
+});

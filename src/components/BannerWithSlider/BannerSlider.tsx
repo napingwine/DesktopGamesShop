@@ -1,7 +1,6 @@
 import React from 'react';
 import BannerSlide from './BannerSlide';
 import './BannerSlider.scss'
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -9,7 +8,13 @@ import 'swiper/css/scrollbar';
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-const BannerSlider = ({ slidesData, buttonListener }) => {
+const breakpoints ={
+    769: {
+      centeredSlides: true,
+    },
+};
+
+const BannerSlider = ({ slidesData}) => {
   return (
     <div>
       <Swiper
@@ -20,11 +25,7 @@ const BannerSlider = ({ slidesData, buttonListener }) => {
         loop={true}
         navigation
         pagination
-        breakpoints={{
-          769: {
-            centeredSlides: true,
-          },
-        }}
+        breakpoints={breakpoints}
         className='my-swiper'
       >
         {slidesData.map(slideData =>

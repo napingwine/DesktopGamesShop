@@ -10,13 +10,27 @@ import Footer from './components/Footer/Footer';
 import Catalogue from './pages/Catalogue/Catalogue';
 import Menu from './components/Menu/Menu';
 import './styles/app.scss';
+import Cart from './pages/Cart/Cart';
+
+const RoutesSection = () => {
+  return (
+    <Routes>
+      <Route path='/' element={<MainPage />} />
+      <Route path='/about-us' element={<AboutUs />} />
+      <Route path='/events' element={<Events />} />
+      <Route path='/contacts' element={<Contacts />} />
+      <Route path='/catalogue' element={<Catalogue />} />
+      <Route path='/cart' element={<Cart />} />
+    </Routes>
+  )
+};
 
 const App = () => {
   const [burgerMenuOpen, setBurgerMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
     burgerMenuOpen ? document.body.classList.add('popup-active') : document.body.classList.remove('popup-active')
-  }, [burgerMenuOpen])
+  }, [burgerMenuOpen]);
 
   return (
     <div className='app'>
@@ -34,15 +48,3 @@ const App = () => {
 };
 
 export default App;
-
-const RoutesSection = () => {
-  return (
-    <Routes>
-      <Route path='/' element={<MainPage />} />
-      <Route path='/about-us' element={<AboutUs />} />
-      <Route path='/events' element={<Events />} />
-      <Route path='/contacts' element={<Contacts />} />
-      <Route path='/catalogue' element={<Catalogue />} />
-    </Routes>
-  )
-}
