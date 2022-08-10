@@ -5,15 +5,15 @@ import { useAppDispatch, useAppSelector } from './../../hooks/redux';
 import CustomButton from './../../components/Buttons/CustomButtonShop';
 import CustomButtonByIOneClick from '../../components/Buttons/CustomButtonByIOneClick';
 
-const Price = ({ price, sale }) => {
+const Price = React.memo(({ price, sale }) => {
   return (
     <div className="price">
       {<><span className={sale ? 'old-price' : ''}>{price}грн</span> {sale ? <span className='new-price'> {price * (sale / 100)}грн</span> : ''} </>}
     </div>
   )
-};
+});
 
-const Amount = ({ pcs, index }) => {
+const Amount = React.memo(({ pcs, index }) => {
   const { increaseQuantity, reduceQuantity } = CartSlicer.actions
   const dispatch = useAppDispatch();
   return (
@@ -23,12 +23,15 @@ const Amount = ({ pcs, index }) => {
       <button className='amount-button' onClick={() => dispatch(increaseQuantity(index))}>+</button>
     </>
   )
-};
+});
 
 const Cart = () => {
   const { items, totalPrice } = useAppSelector(state => state.cartReducer);
   const dispatch = useAppDispatch();
-  const { deleteItem } = CartSlicer.actions
+  const { deleteItem } = CartSlicer.actions;
+
+  React.useEffect(() => {
+  }, [totalPrice])
 
   return (
     <div className='cart-page container'>

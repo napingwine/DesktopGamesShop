@@ -65,5 +65,16 @@
       }
     }
   
+    .confirmation-section {
+      .confirmation-block{
+        display: grid;
+        justify-content: center;
+        grid-gap: 20px;
+        padding: 30px 15px;
+        background-color: #FFFFFF;
+        box-shadow: 5px 6px 16px rgb(42 42 42 / 16%);
+        border-radius: 9px;
+      }
+    }
   }
 }

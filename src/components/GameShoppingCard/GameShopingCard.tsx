@@ -16,7 +16,9 @@ const GameShoppingCard: FC<IGameShoppingCard> = ({ price, sale, title, audience,
   };
 
   const addToCart = () => {
-    dispatch(addItemToCart({ id, name: title, photo: photoURL, pcs: 1, price }));
+    let item = { id, name: title, photo: photoURL, pcs: 1, price, sale:0 }
+    if(sale)item.sale=sale
+    dispatch(addItemToCart(item));
   };
 
   return (
