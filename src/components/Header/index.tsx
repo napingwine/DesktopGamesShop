@@ -11,7 +11,7 @@ import { useAppSelector } from '../../hooks/redux';
 
 const Header = ({ burgerMenuOpen, setBurgerMenuOpen }) => {
   const [searchValue, setSearchValue] = useState<string>('');
-  const { items } = useAppSelector(state => state.cartReducer);
+  const { totalItemsAmount } = useAppSelector(state => state.cartReducer);
 
   ///
   const openProfile = () => {
@@ -39,7 +39,7 @@ const Header = ({ burgerMenuOpen, setBurgerMenuOpen }) => {
           <img src={profileIcon} className="header__cabinet-and-cart-wrapper__profile" alt='profile' onClick={openProfile} />
           <NavLink to='/cart' className="header__cabinet-and-cart-wrapper__cart-wrapper">
             <img src={cartIconWhite} className="header__cabinet-and-cart-wrapper__cart-wrapper__cart" alt='cart' />
-            {items.length && <div className="header__cabinet-and-cart-wrapper__cart-wrapper__cart__items-amount">{items.length}</div>}
+            {totalItemsAmount > 0 ? <div className="header__cabinet-and-cart-wrapper__cart-wrapper__cart__items-amount">{totalItemsAmount}</div> : ''}
           </NavLink>
         </div>
       </div>

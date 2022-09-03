@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import phone from '../../assets/Icons/carbon_phone-voice.png'
-import clock from '../../assets/Icons/bi_clock.png'
-import map from '../../assets/Icons/clarity_map-marker-line.png'
-import letter from '../../assets/Icons/letter.png'
+import phone from '../../assets/Icons/carbon_phone-voice.png';
+import clock from '../../assets/Icons/bi_clock.png';
+import map from '../../assets/Icons/clarity_map-marker-line.png';
+import letter from '../../assets/Icons/letter.png';
 import CustomButton from '../../components/Buttons/CustomButton';
 
 const Contacts = () => {
@@ -10,15 +10,14 @@ const Contacts = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [comment, setComment] = useState('');
 
-
   const formSubmit = (e) => {
     e.preventDefault()
     console.log('contact us request button')
-  }
+  };
 
   const agreamentWarning = () => {
     console.log('agreamen popup')
-  }
+  };
 
   return (
     <section className='main-page__section-about-us__contacts '>
